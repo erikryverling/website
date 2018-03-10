@@ -1,0 +1,19 @@
+# NPM packages folder
+node_modules
+
+# Yarn lock file
+*.lock
+
+# Documentation
+README.md
+
+# Log files
+*.log
+
+# Output
+/build
+
+# Firebase
+firebase.json
+.firebaserc
+database.rules.json

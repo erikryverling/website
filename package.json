@@ -1,0 +1,27 @@
+{
+  "name": "erik-r-yverling",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^16.2.0",
+    "react-addons-css-transition-group": "^15.6.2",
+    "react-dom": "^16.2.0",
+    "react-highlight": "briancappello/react-highlight#react-v16-compiled",
+    "react-images": "^0.5.17",
+    "react-scripts": "1.1.1",
+    "react-typewriter": "^0.4.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "storybook": "start-storybook -p 9009 -s public",
+    "build-storybook": "build-storybook -s public"
+  },
+  "devDependencies": {
+    "@storybook/addon-actions": "^3.3.14",
+    "@storybook/addon-links": "^3.3.14",
+    "@storybook/react": "^3.3.14"
+  }
+}
