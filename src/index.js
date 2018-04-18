@@ -2,9 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Lightbox from 'react-images';
 import Typewriter from 'react-typewriter';
+import ReactGA from 'react-ga'
 
 import './index.css'
 import '../node_modules/highlight.js/styles/gruvbox-dark.css'
+
 
 class App extends React.Component {
     constructor() {
@@ -12,6 +14,9 @@ class App extends React.Component {
         this.state = {lightboxIsOpen: false}
         this.openLightbox = this.openLightbox.bind(this);
         this.closeLightbox = this.closeLightbox.bind(this);
+
+        ReactGA.initialize('UA-26302151-1')
+        ReactGA.pageview(window.location.pathname);
     }
 
     openLightbox(event, obj) {
