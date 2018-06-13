@@ -57,7 +57,7 @@ class App extends React.Component {
                             <h1>I am <a className="erik" onClick={this.openLightbox}>Erik</a> R. Yverling</h1>
                             <p>
                                 Android developer at <a href="https://www.izettle.com">iZettle</a> and Arch Linux user in heart.<br/>
-                                Also into food, electronic music, political sience and snowboarding.
+                                Also into food, beer, travel, electronic music and snowboarding.
                             </p>
                         </div>
                         <CodeBox/>
