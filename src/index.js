@@ -56,7 +56,7 @@ class App extends React.Component {
                         <div className="titleBox">
                             <h1>I am <a className="erik" onClick={this.openLightbox}>Erik</a> R. Yverling</h1>
                             <p>
-                                Android developer at <a href="https://www.izettle.com">iZettle</a> and Arch Linux user in heart.<br/>
+                                Android developer at <a href="https://www.hemnet.se">Hemnet</a> and Arch Linux user in heart.<br/>
                                 Also into food, beer, travel, electronic music and snowboarding.
                             </p>
                         </div>
