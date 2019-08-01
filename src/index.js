@@ -1,51 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Lightbox from 'react-images';
 import Typewriter from 'react-typewriter';
 import ReactGA from 'react-ga'
 
 import './index.css'
 import '../node_modules/highlight.js/styles/gruvbox-dark.css'
 
-
 class App extends React.Component {
     constructor() {
         super();
-        this.state = {lightboxIsOpen: false}
-        this.openLightbox = this.openLightbox.bind(this);
-        this.closeLightbox = this.closeLightbox.bind(this);
 
         ReactGA.initialize('UA-26302151-1')
         ReactGA.pageview(window.location.pathname);
     }
 
-    openLightbox(event, obj) {
-        this.setState({
-          lightboxIsOpen: true,
-        });
-     }
-
-    closeLightbox(event, obj) {
-        this.setState({
-          lightboxIsOpen: false,
-        });
-     }
-
-    componentDidMount() {
-        document.title = "Erik R. Yverling"
-    }
-
     render() {
         return(
             <div className="rootBox"> 
-                <Lightbox
-                    images={[{ src: 'https://erik.r.yverling/profile.jpg' }]}
-                    isOpen={this.state.lightboxIsOpen}
-                    backdropClosesModal={true}
-                    showImageCount={false}
-                    width={500}
-                    onClose={this.closeLightbox}
-                />
                 <div className="upperContentBox"> 
                     <div className="linkBox">
                         <a href="https://www.linkedin.com/in/erikryverling">LinkedIN</a>
@@ -54,10 +25,10 @@ class App extends React.Component {
                     </div>
                     <div className="mainBox"> 
                         <div className="titleBox">
-                            <h1>I am <a className="erik" onClick={this.openLightbox}>Erik</a> R. Yverling</h1>
+                            <h1>I'm Erik<br/> R. Yverling</h1>
                             <p>
-                                Android developer at <a href="https://www.hemnet.se">Hemnet</a> and Arch Linux user in heart.<br/>
-                                Also into food, beer, travel, electronic music and snowboarding.
+                                I work as an Android developer at <a className="hemnet" href="https://www.hemnet.se">Hemnet</a>.<br/>
+                                I'm also a bedroom DJ and into stuff like snowboarding, travel, food and beer.
                             </p>
                         </div>
                         <CodeBox/>
@@ -80,6 +51,16 @@ class App extends React.Component {
                                     The app is available both on Google Play and on GitHub, as an open source project.
                                 </p>
                                 <a href='https://play.google.com/store/apps/details?id=se.yverling.wearto&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png' className="googlePlayButton"/></a>
+                            </div>
+                        </div>
+                        <div className="projectBox">
+                            <a href="https://soundcloud.com/megoemusic"><img className="projectLogo" src="./megoe-logo.png"/></a>
+                            <div className="projectDescriptionBox">
+                                <h3>DJ mixes</h3>
+                                <p>
+                                    Besides software development one of my hobbies are DJing. You can find my mixes on <a href="https://www.soundcloud.com/megoemusic">https://www.soundcloud.com/megoemusic</a>. These are all mixed and recored straight from the decs.
+                                </p>
+                                <iframe title="soundcloudEmbedded" className="soundcloudEmbedded" width="100%" height="150" scrolling="no" frameBorder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/649189928&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"/>
                             </div>
                         </div>
                     </div>
