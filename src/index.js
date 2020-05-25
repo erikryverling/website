@@ -27,8 +27,8 @@ class App extends React.Component {
                         <div className="titleBox">
                             <h1>I'm Erik<br/> <span>R.</span> Yverling</h1>
                             <p>
-                                I work as an Android developer at <a className="hemnet" href="https://www.hemnet.se">Hemnet</a>.<br/>
-                                I'm also a bedroom DJ and into stuff like snowboarding, travel, food and beer.
+                                I'm into software development in general and Android developent in particular.<br/>
+                                I'm also a bedroom DJ and digg stuff like snowboarding, travel, food and beer.
                             </p>
                         </div>
                         <CodeBox/>
