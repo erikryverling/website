@@ -1,29 +1,26 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito:300');
 @import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Vollkorn:700');
+@import url('https://fonts.googleapis.com/css2?family=Vidaloka&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Roboto:300');
-@import url('https://fonts.googleapis.com/css?family=Fira+Mono');
 @import url('https://fonts.googleapis.com/css?family=Material+Icons');
 
+@import "mobile.css";
+@import "desktop.css";
+
 :root {
-    /* COLOR PALETTE */
+    /* Colors */
 
     --color-white: #ffffff;
     --color-black: #000000;
 
-    --color-accent: #d3869b;
-    --color-dark-background: #1a1a1a;
+    --color-primary: #DCC788;
+    --color-accent: #878FAB;
 
-    --color-hemnet: #39aa35;
-    --color-link-box: #e8e8e8;
-
-    --color-code-box-white: #fbf1c7;
-    --color-code-box-red: #fb4934;
-    --color-code-box-blue: #84a598;
-    --color-code-box-green: #b9bb26;
-    --color-code-box-yellow: #fabd3f;
+    --color-dark-background: #292D3C;
+    --color-text-primary: #404040;
 
 
-    /* SPACES */
+    /* Spaces */
 
     --space-small: 15px;
     --space-normal: 30px;
@@ -32,18 +29,14 @@
     --space-huge: 120px;
 
 
-    /* FONTS */
+    /* Fonts */
 
-    --font-main: 'Nunito', sans-serif;
+    --font-main: 'Vidaloka', serif;
     --font-title: 'Vollkorn', serif;
+    --font-body: 'roboto-regular', sans-serif;
     --font-link: 'roboto', sans-serif;
-    --font-code-box: 'Fira Mono', monospace 
 }
 
-
-/* LAYOUT */
-
-/* Common */
 
 html, body {
     margin: 0;
@@ -52,25 +45,26 @@ html, body {
 
 p {
     margin: 0;
-    font-family: var(--font-main);
+    font-family: var(--font-body);
+    color: var(--color-text-primary);
+    line-height: 1.5em;
 }
 
-a:link, a:visited {
-    color: var(--color-black);
-}
-
-a:hover {
-    color: var(--color-accent);
-}
 
 h1, h2, h3 {
     margin: 0;
     width: fit-content;
-    font-family: var(--font-title);
+    color: var(--color-text-primary);
 }
 
 h1 {
-    line-height: 1.2;
+    line-height: 1;
+    font-family: var(--font-main);
+    font-weight: normal;
+}
+
+h2, h3 {
+    font-family: var(--font-title);
 }
 
 .rootBox {
@@ -79,29 +73,29 @@ h1 {
     height: 100vh;
 }
 
-.linkBox {
+.upperContentBox {
+    margin: 0 auto 0 auto;
+}
+
+.mainBox {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mainSocialBox {
     justify-content: space-between;
     flex-direction: row;
     display: flex;
+    align-items: center;
 }
 
-.linkBox a:link, .linkBox a:visited {
-    padding: 10px;
-    font-weight: bold;
-    text-decoration: none;
-    border: 2px solid var(--color-link-box);
-    border-radius: 10px;
-    color: var(--color-link-box);
-    font-family: var(--font-link);
-}
-
-.linkBox a:hover {
-    border: 2px solid var(--color-accent);
-    color: var(--color-accent)
+.mainSocialLogo path {
+    fill: var(--color-accent);
 }
 
 .titleBox h1 {
-    color: var(--color-accent)
+    color: var(--color-primary);
+    margin-bottom: var(--space-small);
 }
 
 .titleBox p {
@@ -155,25 +149,6 @@ h1 {
 
 .mainBox {
     margin-bottom: var(--space-huge);
-}
-
-a.hemnet {
-    transition: color 2s;
-    text-decoration: none;
-    color: var(--color-white);
-}
-
-a.hemnet:hover {
-    color: var(--color-hemnet);
-}
-
-.codeBox {
-    width: 540px;
-    height: 290px;
-    padding-top: 50px;
-    color: var(--color-code-box-white);
-    background-color: var(--color-dark-background);
-    font-family: var(--font-code-box);
 }
 
 .scrollIndicator {
@@ -238,32 +213,51 @@ a.hemnet:hover {
 }
 
 .projectIntroBox p {
+    text-align: center;
     margin: 0 auto 0 auto;
     font-style: italic;
     width: fit-content;
 }
 
-.projectDescriptionBox {
-    display: block;
-    height: fit-content;
+.projectsBox {
+    display: flex;
+    justify-content: space-between;
 }
 
-.projectDescriptionBox p {
-    margin-bottom: var(--space-small);
+.projectsBox a:link, .projectsBox a:visited {
+    border-radius: var(--space-normal);
+    background-color: #f6f6f6;
+    text-decoration: none;
+    padding: var(--space-normal);
+}
+
+.projectsBox a:hover {
+    border-radius: var(--space-normal);
+    background-color: #e7e7e7;
+    text-decoration: none;
+    padding: var(--space-normal);
 }
 
 .projectLogo {
+    margin: 0 auto var(--space-normal) auto;
     display: block;
-    margin: auto;
 }
 
-.googlePlayButton {
-    display: block;
-    margin-left: -10px;
+.socialIntroBox h2 {
+    margin: 0 auto 0 auto;
 }
 
-.soundcloudEmbedded {
-    margin-top: 20px
+.socialIntroBox p {
+    text-align: center;
+    margin: 0 auto 0 auto;
+    font-style: italic;
+    width: fit-content;
+}
+
+.socialBox {
+    justify-content: space-between;
+    flex-direction: row;
+    display: flex;
 }
 
 .creditsBox {
@@ -274,231 +268,10 @@ a.hemnet:hover {
     font-size: 0.8em;
 }
 
-
-/* Code box styles */
-
-.red {
-    color: var(--color-code-box-red);
+.creditsBox a:link, .creditsBox a:visited {
+    color: var(--color-black);
 }
 
-.purple {
+.creditsBox a:hover {
     color: var(--color-accent);
-}
-
-.blue {
-    color: var(--color-code-box-blue);
-}
-
-.green {
-    color: var(--color-code-box-green);
-}
-
-.yellow {
-    color: var(--color-code-box-yellow);
-}
-
-.fat {
-    font-weight: bold;
-}
-
-.in2 {
-    margin-left: 2em;
-}
-
-.in4 {
-    margin-left: 4em;
-}
-
-.in6 {
-    margin-left: 6em;
-}
-
-.in8 {
-    margin-left: 8em;
-}
-
-
-/* Mobile */
-
-@media screen and (max-width: 1280px) {
-    body {
-        padding-top: var(--space-normal);
-    }
-
-    h1 {
-        font-size: 3em;
-        padding: 0;
-    }
-
-    h2 {
-        font-size: 2.5em;
-    }
-
-    h3 {
-        font-size: 1.75em;
-    }
-
-    p {
-        font-size: 1em;
-    }
-
-    .upperContentBox {
-        padding-bottom: var(--space-huge);
-    }
-
-    .linkBox {
-        margin: 0 var(--space-normal) var(--space-huge) var(--space-normal);
-    }
-
-    .titleBox {
-        margin: auto var(--space-normal) auto var(--space-normal);
-    }
-
-    .mainBox {
-        margin-bottom: var(--space-huge);
-    }
-
-    .codeBox {
-        display: none;
-    }
-
-    .lowerSectionTop {
-        padding: var(--space-large) 0 var(--space-normal) 0; 
-    }
-
-    .lowerSectionMain {
-        margin-top: -33px;
-        padding: 0 var(--space-normal) var(--space-small) var(--space-normal);
-    }
-
-    .lowerContentBox {
-        width: fill-content;
-    }
-
-    .projectBox {
-        margin-bottom: var(--space-very-large);
-    }
-   
-    .projectIntroBox {
-        margin: var(--space-normal) auto var(--space-very-large) auto;
-    }
-
-    .projectIntroBox p {
-        font-size: 1.15em;
-        text-align: center;
-    }
-
-    .projectDescriptionBox {
-        margin: var(--space-normal) var(--space-normal) 0 var(--space-normal);
-    }
-
-    .projectLogo {
-        width: 150px;
-        height: 150px;
-    }
-
-    .googlePlayButton {
-        height: 60px;
-    }
-
-    .soundcloudEmbedded {
-        display: none;
-    }
-
-    .creditsBox {
-        margin: 0 var(--space-small) 0 var(--space-small);
-    }
-}
-
-
-/* Desktop */
-
-@media screen and (min-width: 1280px) {
-    body {
-        padding-top: var(--space-large);
-    }
-
-    h1 {
-        font-size: 4.25em;
-    }
-
-    h2 {
-        font-size: 3.25em;
-    }
-
-    h3 {
-        font-size: 2.5em;
-    }
-
-    p {
-        font-size: 1.25em;
-    }
-
-    .upperContentBox {
-        margin: 0 auto 0 auto;
-        padding: 0 var(--space-large) var(--space-huge) var(--space-large);
-        width: 1160px;
-    }
-
-    .linkBox {
-        margin: 0 0 var(--space-large) auto;
-        width: 300px;
-    }
-
-    .mainBox, .projectBox {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .titleBox {
-        width: 420px;
-        margin: auto 0 auto 0;
-    }
-
-    .lowerSectionTop {
-        padding: 130px 0 var(--space-large) 0;
-    }
-
-    .lowerSectionMain {
-        margin-top: -95px;
-        padding: 0 var(--space-large) var(--space-small) var(--space-large);
-    }
-
-    .lowerContentBox {
-        width: 1000px;
-    }
-
-    .projectIntroBox {
-        width: 800px;
-        margin: 0 auto var(--space-huge) auto;
-    }
-
-    .projectIntroBox p {
-        font-size: 1.5em;
-        margin: 0 auto 0 auto;
-    }
-
-    .projectBox {
-        margin-bottom: var(--space-huge);
-    }
-
-    .projectDescriptionBox {
-        width: 600px;
-        margin: auto 0 auto 0;
-    }
-
-    .projectLogo {
-        width: 200px;
-        height: 200px;
-    }
-
-    .googlePlayButton {
-        height: 70px;
-    }
-
-    .creditsBox {
-        width: fit-content;
-        margin: 0 auto 0 auto;
-    }
 }

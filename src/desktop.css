@@ -1,0 +1,100 @@
+@media screen and (min-width: 1200px) {
+    body {
+        padding-top: 180px;
+    }
+
+    p {
+        font-size: 1.25em;
+    }
+
+    h1 {
+        font-size: 4.75em;
+    }
+
+    h2 {
+        font-size: 3.25em;
+    }
+
+    h3 {
+        font-size: 2.25em;
+    }
+
+    .upperContentBox {
+        width: 1080px;
+        padding: 0 var(--space-large) 0 var(--space-large);
+    }
+
+    .mainBox {
+        flex-direction: row;
+    }
+
+    .titleBox {
+        width: 400px;
+        margin: auto 0 auto 0;
+    }
+
+    .mainSocialBox {
+        width: 400px;
+        margin: auto 0 auto 0;
+    }
+
+    .mainSocialLogo {
+        width: 70px;
+        height: 70px;
+    }
+
+    .scrollIndicator {
+        margin-bottom: var(--space-very-large);
+    }
+
+    .lowerSectionTop {
+        padding: 130px 0 var(--space-large) 0;
+    }
+
+    .lowerSectionMain {
+        margin-top: -95px;
+    }
+
+    .lowerContentBox {
+        width: 1080px;
+        padding: 0 var(--space-large) 0 var(--space-large);
+    }
+
+    .projectIntroBox {
+        margin: 0 auto var(--space-large) auto;
+    }
+
+    .projectIntroBox p {
+        font-size: 1.2em;
+        margin: 0 auto 0 auto;
+    }
+
+    .projectsBox {
+        flex-direction: row;
+        margin: 0 auto var(--space-huge) auto;
+    }
+
+    .projectsBox a:link, .projectsBox a:visited {
+        width: 400px;
+        height: 430px;
+    }
+
+    .socialIntroBox {
+        width: 600px;
+        margin: 0 auto var(--space-large) auto;
+    }
+
+    .socialIntroBox p {
+        font-size: 1.2em;
+    }
+
+    .socialBox {
+        width: 1000px;
+        margin: 0 auto var(--space-huge) auto;
+    }
+
+    .creditsBox {
+        width: fit-content;
+        margin: 0 auto var(--space-normal) auto;
+    }
+}
