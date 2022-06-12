@@ -20,8 +20,9 @@ class App extends React.Component {
                         <div className="titleBox">
                             <h1>I'm Erik<br/> <span>R.</span> Yverling</h1>
                             <p>
-                                I have a great passion for creating things, whether it's software, design or music.
-                                I'm also into stuff like snowboarding, travel, food and beer.<br/>
+                                A freelance developer with an overall passion for building mobile apps. 
+                                I also have leadership and management experience.
+                                Besides apps I love creating music.<br/>
                             </p>
                         </div>
                         <div className="mainSocialBox">
@@ -76,16 +77,6 @@ class App extends React.Component {
                                 </div>
                             </div>
                             </a>
-                        </div>
-                        <div className="socialIntroBox"> 
-                            <h2>Social</h2>
-                            <p>These are my other social accounts where you can find my reviews and recommended content</p>
-                        </div>
-                        <div className="socialBox">
-                            <a href="https://open.spotify.com/user/eroi"><img className="socialLogo" src="./spotify-logo.png"/></a>
-                            <a href="https://www.imdb.com/user/ur34087170/ratings"><img className="socialLogo" src="./imdb-logo.png"/></a>
-                            <a href="https://untappd.com/user/erikryverling"><img className="socialLogo" src="./untapped-logo.png"/></a>
-                            <a href="https://my.playstation.com/profile/syntaxeus"><img className="socialLogo" src="./ps-logo.png"/></a>
                         </div>
                     </div>
                     <div className="creditsBox">

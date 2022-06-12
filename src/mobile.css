@@ -72,22 +72,6 @@
         height: 150px;
     }
 
-    .socialIntroBox {
-        margin-bottom: var(--space-normal);
-    }
-
-    .socialBox {
-        width: 280px;
-        margin: 0 auto 0 auto;
-        flex-wrap: wrap;
-    }
-
-    .socialLogo {
-        width: 100px;
-        height: 100px;
-        margin: var(--space-small);
-    }
-
     .creditsBox {
         margin: 0 var(--space-small) var(--space-normal) var(--space-small);
     }

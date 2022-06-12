@@ -1,0 +1,2 @@
+#!/usr/bin/env fish
+./node_modules/firebase-tools/bin/firebase login:ci

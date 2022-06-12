@@ -243,23 +243,6 @@ h2, h3 {
     display: block;
 }
 
-.socialIntroBox h2 {
-    margin: 0 auto 0 auto;
-}
-
-.socialIntroBox p {
-    text-align: center;
-    margin: 0 auto 0 auto;
-    font-style: italic;
-    width: fit-content;
-}
-
-.socialBox {
-    justify-content: space-between;
-    flex-direction: row;
-    display: flex;
-}
-
 .creditsBox {
     text-align: center;
 }
