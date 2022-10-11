@@ -2,4 +2,4 @@
 
 ---
 
-<img width="1209" alt="Skärmavbild 2021-07-29 kl  23 38 28" src="https://user-images.githubusercontent.com/1917608/127569300-dc7eb53d-0fdf-407e-82d1-daccd6c1cec9.png">
+<img width="1509" alt="Screenshot 2022-10-11 at 18 39 05" src="https://user-images.githubusercontent.com/1917608/195150232-69b8d0ee-99db-45e5-a8e1-8b9f74670761.png">
