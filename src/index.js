@@ -2,7 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import ReactGA from 'react-ga'
 
+import TagManager from 'react-gtm-module'
+
 import './index.css'
+
+const tagManagerArgs = {
+  gtmId: 'G-Q5VHT6CPPT'
+}
+
+TagManager.initialize(tagManagerArgs)
 
 class App extends React.Component {
     constructor() {
@@ -50,7 +58,7 @@ class App extends React.Component {
                     <div className="lowerContentBox">
                         <div className="projectIntroBox"> 
                             <h2>Projects</h2>
-                            <p>These are the personal projects that I've been working on latly</p>
+                            <p>These are the personal projects that I've been working on lately</p>
                         </div>
                         <div className="projectsBox">
                             <a href="https://www.github.com/erikryverling/wearto">
