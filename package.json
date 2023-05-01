@@ -5,7 +5,7 @@
   "dependencies": {
     "@brainhubeu/react-carousel": "^2.0.4",
     "css-loader": "^6.7.3",
-    "firebase-tools": "^11.24.1",
+    "firebase-tools": "^11.29.1",
     "react": "^18.2.0",
     "react-addons-css-transition-group": "^15.6.2",
     "react-dom": "^18.2.0",
@@ -24,9 +24,9 @@
     "build-storybook": "build-storybook -s public"
   },
   "devDependencies": {
-    "@storybook/addon-actions": "^6.5.16",
-    "@storybook/addon-links": "^6.5.16",
-    "@storybook/react": "^6.5.16"
+    "@storybook/addon-actions": "^7.0.7",
+    "@storybook/addon-links": "^7.0.7",
+    "@storybook/react": "^7.0.7"
   },
   "browserslist": {
     "production": [
