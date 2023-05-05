@@ -22,11 +22,14 @@
 
     /* Spaces */
 
+    /* RENAME TO T-SHIRT? */
     --space-small: 15px;
+    --space-smaller: 23px; /* TODO Come up with a better name */
     --space-normal: 30px;
     --space-large: 60px;
     --space-very-large: 90px;
     --space-huge: 120px;
+    --space-huger: 180px;
 
 
     /* Fonts */
@@ -67,6 +70,11 @@ h2, h3 {
     font-family: var(--font-title);
 }
 
+h4 {
+     font-family: var(--font-body);
+     color: var(--color-text-primary);
+}
+
 .rootBox {
     flex-direction: column;
     display: flex;
@@ -82,14 +90,14 @@ h2, h3 {
     justify-content: space-between;
 }
 
-.mainSocialBox {
+.socialBox {
     justify-content: space-between;
     flex-direction: row;
     display: flex;
     align-items: center;
 }
 
-.mainSocialLogo path {
+.socialLogo path {
     fill: var(--color-accent);
 }
 
@@ -208,6 +216,57 @@ h2, h3 {
     margin: 0px auto 0px auto;
 }
 
+.articleIntroBox h2 {
+    margin: 0 auto 0 auto;
+}
+
+.articleIntroBox p {
+    text-align: center;
+    margin: 0 auto 0 auto;
+    font-style: italic;
+    width: fit-content;
+}
+
+.articlesBox {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-normal);
+}
+
+.articlesBox a:link, .articlesBox a:visited {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    border-radius: var(--space-normal);
+    background-color: #f6f6f6;
+    text-decoration: none;
+    padding: var(--space-smaller);
+}
+
+.articlesBox a:hover {
+    border-radius: var(--space-normal);
+    background-color: #e7e7e7;
+    text-decoration: none;
+    padding: var(--space-smaller);
+}
+
+.articlesBox img {
+    width: 100%;
+}
+
+.articleDescription {
+    margin-bottom: var(--space-normal);
+}
+
+.articleDataRow {
+    margin-top: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-style: italic;
+}
+
 .projectIntroBox h2 {
     margin: 0 auto 0 auto;
 }
@@ -225,6 +284,7 @@ h2, h3 {
 }
 
 .projectsBox a:link, .projectsBox a:visited {
+    flex: 1;
     border-radius: var(--space-normal);
     background-color: #f6f6f6;
     text-decoration: none;
@@ -238,7 +298,7 @@ h2, h3 {
     padding: var(--space-normal);
 }
 
-.projectLogo {
+.projectsBox img {
     margin: 0 auto var(--space-normal) auto;
     display: block;
 }

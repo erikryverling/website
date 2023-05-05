@@ -16,6 +16,10 @@
         font-size: 1.75em;
     }
 
+    h4 {
+        font-size: 1.1em;
+    }
+
     .upperContentBox {
         max-width: 540px;
         padding: var(--space-large) var(--space-normal) var(--space-normal) var(--space-normal);
@@ -25,11 +29,11 @@
         flex-direction: column-reverse;
     }
 
-    .mainSocialBox {
+    .socialBox {
         padding-bottom: var(--space-very-large);
     }
 
-    .mainSocialLogo {
+    .socialLogo {
         width: 50px;
         height: 50px;
     }
@@ -48,26 +52,38 @@
         padding: 0 var(--space-normal) var(--space-normal) var(--space-normal);
     }
 
+    .articleIntroBox {
+        margin: var(--space-normal) auto var(--space-large) auto;
+    }
+
+    .articleIntroBox p {
+        font-size: 1.1em;
+    }
+
+    .articlesBox {
+        flex-direction: column;
+        margin: 0 auto var(--space-huge) auto;
+    }
+
+    .articleDataRow {
+        font-size: 0.9em;
+    }
+
     .projectIntroBox {
         margin: var(--space-normal) auto var(--space-large) auto;
     }
 
     .projectIntroBox p {
-        font-size: 1.15em;
+        font-size: 1.1em;
     }
 
     .projectsBox {
         flex-direction: column;
         margin: 0 auto var(--space-large) auto;
+        gap: var(--space-normal);
     }
 
-    .projectsBox a:link, .projectsBox a:visited {
-        height: 340px;
-        max-width: 300px;
-        margin: 0 auto var(--space-normal) auto;
-    }
-
-    .projectLogo {
+    .projectsBox img {
         width: 150px;
         height: 150px;
     }

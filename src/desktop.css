@@ -19,6 +19,10 @@
         font-size: 2.25em;
     }
 
+    h4 {
+        font-size: 1.3em;
+    }
+
     .upperContentBox {
         width: 1080px;
         padding: 0 var(--space-large) 0 var(--space-large);
@@ -33,12 +37,12 @@
         margin: auto 0 auto 0;
     }
 
-    .mainSocialBox {
+    .socialBox {
         width: 400px;
         margin: auto 0 auto 0;
     }
 
-    .mainSocialLogo {
+    .socialLogo {
         width: 70px;
         height: 70px;
     }
@@ -48,7 +52,7 @@
     }
 
     .lowerSectionTop {
-        padding: 130px 0 var(--space-large) 0;
+        padding: var(--space-huge) 0 var(--space-large) 0;
     }
 
     .lowerSectionMain {
@@ -60,23 +64,39 @@
         padding: 0 var(--space-large) 0 var(--space-large);
     }
 
+    .articleIntroBox {
+        margin: 0 auto var(--space-large) auto;
+    }
+
+    .articleIntroBox p {
+        font-size: 1.2em;
+    }
+
+    .articlesBox {
+        flex-direction: row;
+        margin: 0 auto var(--space-huger) auto;
+    }
+
+    .articlesBox p {
+        font-size: 1em;
+    }
+
+    .articleDataRow {
+        font-size: 0.9em;
+    }
+
     .projectIntroBox {
         margin: 0 auto var(--space-large) auto;
     }
 
     .projectIntroBox p {
         font-size: 1.2em;
-        margin: 0 auto 0 auto;
     }
 
     .projectsBox {
         flex-direction: row;
         margin: 0 auto var(--space-huge) auto;
-    }
-
-    .projectsBox a:link, .projectsBox a:visited {
-        width: 400px;
-        height: 430px;
+        gap: var(--space-huge);
     }
 
     .creditsBox {
