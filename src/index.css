@@ -22,6 +22,7 @@
 
     /* Spaces */
 
+    --space-xxs: 5px;
     --space-xs: 15px;
     --space-s: 23px; 
     --space-m: 30px;
@@ -53,7 +54,7 @@ p {
 }
 
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
     margin: 0;
     width: fit-content;
     color: var(--color-text-primary);
@@ -251,6 +252,11 @@ h4 {
 
 .articlesBox img {
     width: 100%;
+    border-radius: var(--space-xxs);
+}
+
+.articlesBox h4 {
+    margin: var(--space-s) 0 var(--space-xxs) 0;
 }
 
 .articleDescription {

@@ -62,7 +62,7 @@ class App extends React.Component {
 
                         <div className="articleIntroBox"> 
                             <h2>Articles</h2>
-                            <p>These are my Medium articles where I blog about development, tech and general lifehacks</p>
+                            <p>These are my Medium articles about development, tech and general lifehacks</p>
                         </div>
 
                         <div className="articlesBox">
@@ -74,20 +74,20 @@ class App extends React.Component {
                                     How to unit test a ViewModel using StateFlow on Android     
                                 </p>
                                 <div class="articleDataRow">
-                                    <p>3 min</p>
-                                    <p>May 4 2023</p>
+                                    <p>3 min read</p>
+                                    <p>May 4, 2023</p>
                                 </div>
                             </a>
 
                             <a href="https://medium.com/@erik.r.yverling/how-to-quickly-resize-an-image-on-github-b782911abb05">
                                 <img src="./github.png" alt="github"/>
-                                <h4>How To Quickly Resize an Image on GitHub</h4>
+                                <h4>Quickly Resize an Image on GitHub</h4>
                                 <p class="articleDescription">
                                     How to change size of an image while uploading it to GitHub
                                 </p>
                                 <div class="articleDataRow">
-                                    <p>1 min</p>
-                                    <p>April 21 2023</p>
+                                    <p>1 min read</p>
+                                    <p>April 21, 2023</p>
                                 </div>
                             </a>
 
@@ -98,8 +98,8 @@ class App extends React.Component {
                                     How to automatically sync and back up local configuration files using Google Drive
                                 </p>
                                 <div class="articleDataRow">
-                                    <p>1 min</p>
-                                    <p>Mars 28 2023</p>
+                                    <p>1 min read</p>
+                                    <p>Mars 28, 2023</p>
                                 </div>
                             </a>
                         </div>
