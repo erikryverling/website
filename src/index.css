@@ -22,14 +22,13 @@
 
     /* Spaces */
 
-    /* RENAME TO T-SHIRT? */
-    --space-small: 15px;
-    --space-smaller: 23px; /* TODO Come up with a better name */
-    --space-normal: 30px;
-    --space-large: 60px;
-    --space-very-large: 90px;
-    --space-huge: 120px;
-    --space-huger: 180px;
+    --space-xs: 15px;
+    --space-s: 23px; 
+    --space-m: 30px;
+    --space-l: 60px;
+    --space-xl: 90px;
+    --space-xxl: 120px;
+    --space-xxxl: 180px;
 
 
     /* Fonts */
@@ -103,7 +102,7 @@ h4 {
 
 .titleBox h1 {
     color: var(--color-primary);
-    margin-bottom: var(--space-small);
+    margin-bottom: var(--space-s);
 }
 
 .titleBox p {
@@ -156,7 +155,7 @@ h4 {
 }
 
 .mainBox {
-    margin-bottom: var(--space-huge);
+    margin-bottom: var(--space-xxl);
 }
 
 .scrollIndicator {
@@ -230,24 +229,24 @@ h4 {
 .articlesBox {
     display: flex;
     justify-content: center;
-    gap: var(--space-normal);
+    gap: var(--space-m);
 }
 
 .articlesBox a:link, .articlesBox a:visited {
     flex: 1;
     display: flex;
     flex-direction: column;
-    border-radius: var(--space-normal);
+    border-radius: var(--space-m);
     background-color: #f6f6f6;
     text-decoration: none;
-    padding: var(--space-smaller);
+    padding: var(--space-s);
 }
 
 .articlesBox a:hover {
-    border-radius: var(--space-normal);
+    border-radius: var(--space-m);
     background-color: #e7e7e7;
     text-decoration: none;
-    padding: var(--space-smaller);
+    padding: var(--space-s);
 }
 
 .articlesBox img {
@@ -255,7 +254,7 @@ h4 {
 }
 
 .articleDescription {
-    margin-bottom: var(--space-normal);
+    margin-bottom: var(--space-m);
 }
 
 .articleDataRow {
@@ -285,21 +284,21 @@ h4 {
 
 .projectsBox a:link, .projectsBox a:visited {
     flex: 1;
-    border-radius: var(--space-normal);
+    border-radius: var(--space-m);
     background-color: #f6f6f6;
     text-decoration: none;
-    padding: var(--space-normal);
+    padding: var(--space-m);
 }
 
 .projectsBox a:hover {
-    border-radius: var(--space-normal);
+    border-radius: var(--space-m);
     background-color: #e7e7e7;
     text-decoration: none;
-    padding: var(--space-normal);
+    padding: var(--space-m);
 }
 
 .projectsBox img {
-    margin: 0 auto var(--space-normal) auto;
+    margin: 0 auto var(--space-m) auto;
     display: block;
 }
 

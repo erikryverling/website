@@ -22,7 +22,7 @@
 
     .upperContentBox {
         max-width: 540px;
-        padding: var(--space-large) var(--space-normal) var(--space-normal) var(--space-normal);
+        padding: var(--space-l) var(--space-m) var(--space-m) var(--space-m);
     }
 
     .mainBox {
@@ -30,7 +30,7 @@
     }
 
     .socialBox {
-        padding-bottom: var(--space-very-large);
+        padding-bottom: var(--space-xxl);
     }
 
     .socialLogo {
@@ -39,7 +39,7 @@
     }
 
     .lowerSectionTop {
-        padding: var(--space-large) 0 var(--space-normal) 0; 
+        padding: var(--space-l) 0 var(--space-m) 0; 
     }
 
     .lowerSectionMain {
@@ -49,11 +49,11 @@
     .lowerContentBox {
         width: fill-content;
         max-width: 540px;
-        padding: 0 var(--space-normal) var(--space-normal) var(--space-normal);
+        padding: 0 var(--space-m) var(--space-m) var(--space-m);
     }
 
     .articleIntroBox {
-        margin: var(--space-normal) auto var(--space-large) auto;
+        margin: var(--space-m) auto var(--space-l) auto;
     }
 
     .articleIntroBox p {
@@ -62,7 +62,7 @@
 
     .articlesBox {
         flex-direction: column;
-        margin: 0 auto var(--space-huge) auto;
+        margin: 0 auto var(--space-xxl) auto;
     }
 
     .articleDataRow {
@@ -70,7 +70,7 @@
     }
 
     .projectIntroBox {
-        margin: var(--space-normal) auto var(--space-large) auto;
+        margin: var(--space-m) auto var(--space-l) auto;
     }
 
     .projectIntroBox p {
@@ -79,8 +79,8 @@
 
     .projectsBox {
         flex-direction: column;
-        margin: 0 auto var(--space-large) auto;
-        gap: var(--space-normal);
+        margin: 0 auto var(--space-l) auto;
+        gap: var(--space-m);
     }
 
     .projectsBox img {
@@ -89,6 +89,6 @@
     }
 
     .creditsBox {
-        margin: 0 var(--space-small) var(--space-normal) var(--space-small);
+        margin: 0 var(--space-xs) var(--space-m) var(--space-xs);
     }
 }

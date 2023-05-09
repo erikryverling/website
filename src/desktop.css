@@ -25,7 +25,7 @@
 
     .upperContentBox {
         width: 1080px;
-        padding: 0 var(--space-large) 0 var(--space-large);
+        padding: 0 var(--space-l) 0 var(--space-l);
     }
 
     .mainBox {
@@ -48,11 +48,11 @@
     }
 
     .scrollIndicator {
-        margin-bottom: var(--space-very-large);
+        margin-bottom: var(--space-xxl);
     }
 
     .lowerSectionTop {
-        padding: var(--space-huge) 0 var(--space-large) 0;
+        padding: var(--space-xxl) 0 var(--space-l) 0;
     }
 
     .lowerSectionMain {
@@ -61,11 +61,11 @@
 
     .lowerContentBox {
         width: 1080px;
-        padding: 0 var(--space-large) 0 var(--space-large);
+        padding: 0 var(--space-l) 0 var(--space-l);
     }
 
     .articleIntroBox {
-        margin: 0 auto var(--space-large) auto;
+        margin: 0 auto var(--space-l) auto;
     }
 
     .articleIntroBox p {
@@ -74,7 +74,7 @@
 
     .articlesBox {
         flex-direction: row;
-        margin: 0 auto var(--space-huger) auto;
+        margin: 0 auto var(--space-xxxl) auto;
     }
 
     .articlesBox p {
@@ -86,7 +86,7 @@
     }
 
     .projectIntroBox {
-        margin: 0 auto var(--space-large) auto;
+        margin: 0 auto var(--space-l) auto;
     }
 
     .projectIntroBox p {
@@ -95,12 +95,12 @@
 
     .projectsBox {
         flex-direction: row;
-        margin: 0 auto var(--space-huge) auto;
-        gap: var(--space-huge);
+        margin: 0 auto var(--space-xxl) auto;
+        gap: var(--space-xxl);
     }
 
     .creditsBox {
         width: fit-content;
-        margin: 0 auto var(--space-normal) auto;
+        margin: 0 auto var(--space-m) auto;
     }
 }
