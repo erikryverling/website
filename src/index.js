@@ -92,7 +92,7 @@ class App extends React.Component {
                             </a>
 
                              <a href="https://medium.com/@erik.r.yverling/automatic-sync-and-backup-of-config-files-using-google-drive-2e031b3c927a">
-                                <img src="./train.jpg" alt="train"/>
+                                <img src="./train.png" alt="train"/>
                                 <h4>Automatic sync and backup of config files using Google Drive</h4>
                                 <p class="articleDescription">
                                     How to automatically sync and back up local configuration files using Google Drive
