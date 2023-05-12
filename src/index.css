@@ -15,8 +15,8 @@
     --color-primary: #4F99AD;
     --color-primary-variant: #2E5A66;
 
-    --color-secondary: #AD524F;
-    --color-secondary-variant: #66302E;
+    --color-secondary: #AD4F78;
+    --color-secondary-variant: #662E46;
 
     --color-background: #FFFFFF;
 
@@ -72,6 +72,7 @@ h1 {
 
 h2 {
     font-family: var(--font-heading);
+    font-weight: normal;
 }
 
 h3 {
@@ -316,6 +317,11 @@ h4 {
     margin: 0 auto var(--space-m) auto;
     display: block;
 }
+
+.projectsBox h3 {
+    margin-bottom: var(--space-xxs);
+}
+
 
 .creditsBox {
     text-align: center;
