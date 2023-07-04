@@ -1,11 +1,11 @@
 {
   "name": "erik-r-yverling",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "dependencies": {
     "@brainhubeu/react-carousel": "^2.0.4",
-    "css-loader": "^6.7.3",
-    "firebase-tools": "^11.29.1",
+    "css-loader": "^6.8.1",
+    "firebase-tools": "^12.4.2",
     "react": "^18.2.0",
     "react-addons-css-transition-group": "^15.6.2",
     "react-dom": "^18.2.0",
@@ -24,9 +24,9 @@
     "build-storybook": "build-storybook -s public"
   },
   "devDependencies": {
-    "@storybook/addon-actions": "^7.0.7",
-    "@storybook/addon-links": "^7.0.7",
-    "@storybook/react": "^7.0.7"
+    "@storybook/addon-actions": "^7.0.25",
+    "@storybook/addon-links": "^7.0.25",
+    "@storybook/react": "^7.0.25"
   },
   "browserslist": {
     "production": [
