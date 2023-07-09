@@ -111,17 +111,17 @@ class App extends React.Component {
                                 name="WearTo"
                                 link="https://www.github.com/erikryverling/wearto"
                                 description={`
-                                    WearTo is an Android app that lets you add items to Todoist with minimal effort using your wearable. 
+                                    WearTo is an Android app that lets you add items to Todoist with minimal effort using your wearable.
                                     The app is available both on Google Play and on GitHub, as an open source project.
                                 `}
                             />
 
                             <Project
-                                name="Megoe"
-                                link="https://www.soundcloud.com/megoemusic"
+                                name="Twinkle"
+                                link="https://www.github.com/erikryverling/twinkle"
                                 description={`
-                                    Besides software development one of my hobbies are DJing. 
-                                    You can find my mixes on Soundcloud. These are all mixed and recored straight from the decs.
+                                    Twinkle is a small command line app that let's you save the 
+                                    current playing Spotify song to a playlist with a single click.
                                 `}
                             />
 
