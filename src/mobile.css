@@ -65,6 +65,24 @@
         margin: 0 auto var(--space-xxl) auto;
     }
 
+    .articlesBox a.standard:link, .articlesBox a.standard:visited {
+        display: flex;
+        flex-direction: column;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;   
+        border-radius: var(--space-xs);
+        background-color: var(--color-card-background-default);
+        text-decoration: none;
+        padding: var(--space-s);
+    }
+
+    .articlesBox a.standard:hover {
+        background-color: var(--color-card-background-selected);
+    }
+
+    .articlesBox a.extended {
+        display: none;
+    }
+
     .articlesBox p {
         font-size: 0.95em;
     }

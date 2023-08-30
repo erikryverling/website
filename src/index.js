@@ -72,6 +72,15 @@ class App extends React.Component {
                         <div className="articlesBox">
 
                             <Article
+                                link="https://medium.com/@erik.r.yverling/using-google-drive-for-hosting-private-git-repos-942ebf444d76"
+                                imageName="sea"
+                                title="Using Google Drive For Hosting Private Git Repos"
+                                description="How to use Google Drive for hosting private git repos"
+                                readTime="1"
+                                date="August 30, 2023"
+                            />
+
+                            <Article
                                 link="https://medium.com/@erik.r.yverling/unit-testing-ui-state-in-android-viewmodels-b19973311900"
                                 imageName="waterfall"
                                 title="Unit Testing UI State in Android ViewModels"
@@ -92,11 +101,13 @@ class App extends React.Component {
                             <Article
                                 link="https://medium.com/@erik.r.yverling/automatic-sync-and-backup-of-config-files-using-google-drive-2e031b3c927a"
                                 imageName="train"
-                                title="Automatic sync and backup of config files using google drive"
+                                title="Automatic Sync of Config Files Using Google Drive"
                                 description="How to automatically sync and back up local configuration files using Google Drive"
                                 readTime="1"
                                 date="Mars 28, 2023"
+                                isExtended={true}
                             />
+
 
                         </div>
 
@@ -150,9 +161,9 @@ function Social({name, link, path, viewBox=24}) {
     )
 }
 
-function Article({link, imageName, title, description, readTime, date}) {
+function Article({link, imageName, title, description, readTime, date, isExtended}) {
     return(
-        <a href={link}>
+        <a class={`${isExtended ? 'extended' : 'standard'}`} href={link}>
             <img src={`./${imageName}.png`} alt={imageName}/>
             <h4>{title}</h4>
             <p class="articleDescription">
