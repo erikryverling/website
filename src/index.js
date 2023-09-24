@@ -64,53 +64,6 @@ class App extends React.Component {
                 <div className="lowerSectionMain">
                     <div className="lowerContentBox">
 
-                        <div className="articleIntroBox"> 
-                            <h2>Articles</h2>
-                            <p>These are my Medium articles about development, tech and general lifehacks</p>
-                        </div>
-
-                        <div className="articlesBox">
-
-                            <Article
-                                link="https://medium.com/@erik.r.yverling/using-google-drive-for-hosting-private-git-repos-942ebf444d76"
-                                imageName="sea"
-                                title="Using Google Drive For Hosting Private Git Repos"
-                                description="How to use Google Drive for hosting private git repos"
-                                readTime="1"
-                                date="August 30, 2023"
-                            />
-
-                            <Article
-                                link="https://medium.com/@erik.r.yverling/unit-testing-ui-state-in-android-viewmodels-b19973311900"
-                                imageName="waterfall"
-                                title="Unit Testing UI State in Android ViewModels"
-                                description="How to unit test a ViewModel using StateFlow on Android"
-                                readTime="3"
-                                date="May 4, 2023"
-                            />
-
-                            <Article
-                                link="https://medium.com/@erik.r.yverling/how-to-quickly-resize-an-image-on-github-b782911abb05"
-                                imageName="github"
-                                title="Quickly Resize an Image on GitHub"
-                                description="How to change size of an image while uploading it to GitHub"
-                                readTime="1"
-                                date="April 21, 2023"
-                            />
-
-                            <Article
-                                link="https://medium.com/@erik.r.yverling/automatic-sync-and-backup-of-config-files-using-google-drive-2e031b3c927a"
-                                imageName="train"
-                                title="Automatic Sync of Config Files Using Google Drive"
-                                description="How to automatically sync and back up local configuration files using Google Drive"
-                                readTime="1"
-                                date="Mars 28, 2023"
-                                isExtended={true}
-                            />
-
-
-                        </div>
-
                         <div className="projectIntroBox"> 
                             <h2>Projects</h2>
                             <p>These are the personal projects that I've been working on lately</p>

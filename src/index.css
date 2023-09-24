@@ -230,44 +230,6 @@ h4 {
     margin: 0px auto 0px auto;
 }
 
-.articleIntroBox h2 {
-    margin: 0 auto 0 auto;
-}
-
-.articleIntroBox p {
-    text-align: center;
-    margin: 0 auto 0 auto;
-    font-style: italic;
-    width: fit-content;
-}
-
-.articlesBox {
-    display: flex;
-    gap: var(--space-m);
-}
-
-.articlesBox img {
-    width: 100%;
-    border-radius: var(--space-xxs);
-}
-
-.articlesBox h4 {
-    margin: var(--space-s) 0 var(--space-xxs) 0;
-}
-
-.articleDescription {
-    margin-bottom: var(--space-m);
-}
-
-.articleDataRow {
-    margin-top: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    font-style: italic;
-}
-
 .projectIntroBox h2 {
     margin: 0 auto 0 auto;
 }
