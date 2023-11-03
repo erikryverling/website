@@ -18,3 +18,7 @@ firebase.json
 .firebaserc
 database.rules.json
 .firebase
+
+# IDEA project files
+*.iml
+*idea

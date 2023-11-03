@@ -11,7 +11,7 @@
 
     --color-common-light: #E6E6E6;
     --color-common-dark: #333333;
- 
+
     --color-primary: #4F99AD;
     --color-primary-variant: #2E5A66;
 
@@ -19,7 +19,7 @@
 
     --color-background: #FFFFFF;
 
-    --color-card-background-default: #FFFFFF; 
+    --color-card-background-default: #FFFFFF;
     --color-card-background-selected: #F2F2F2;
 
 
@@ -27,7 +27,7 @@
 
     --space-xxs: 5px;
     --space-xs: 15px;
-    --space-s: 23px; 
+    --space-s: 23px;
     --space-m: 30px;
     --space-l: 60px;
     --space-xl: 90px;
@@ -173,8 +173,8 @@ h4 {
 }
 
 .scrollIndicator {
-    animation: bounce 2s; 
-    font-family: 'Material Icons';
+    animation: bounce 2s;
+    font-family: 'Material Icons', serif;
     font-weight: normal;
     font-style: normal;
     font-size: 64px;
@@ -226,7 +226,7 @@ h4 {
 }
 
 .lowerContentBox {
-    margin: 0px auto 0px auto;
+    margin: 0 auto 0 auto;
 }
 
 .projectIntroBox h2 {
@@ -248,7 +248,7 @@ h4 {
 .projectsBox a:link, .projectsBox a:visited {
     flex: 1;
     border-radius: var(--space-xs);
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;   
+    box-shadow: rgba(60, 64, 67, 0.3) 0 1px 2px 0, rgba(60, 64, 67, 0.15) 0 2px 6px 2px;
     background-color: var(--color-card-background-default);
     text-decoration: none;
     padding: var(--space-m);

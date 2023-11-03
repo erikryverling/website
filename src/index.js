@@ -5,8 +5,8 @@ import ReactGA from 'react-ga'
 import './index.css'
 
 class App extends React.Component {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
 
         ReactGA.initialize('UA-26302151-1')
         ReactGA.pageview(window.location.pathname);
@@ -14,14 +14,14 @@ class App extends React.Component {
 
     render() {
         return(
-            <div className="rootBox"> 
-                <div className="upperContentBox"> 
+            <div className="rootBox">
+                <div className="upperContentBox">
                     <div className="mainBox">
 
                         <div className="titleBox">
                             <h1>I'm Erik<br/> <span>R.</span> Yverling</h1>
                             <p>
-                                A freelance developer with an overall passion for building mobile apps. 
+                                A freelance developer with an overall passion for building mobile apps.
                                 I also have leadership and management experience.
                                 Besides apps I love creating music.<br/>
                             </p>
@@ -64,7 +64,7 @@ class App extends React.Component {
                 <div className="lowerSectionMain">
                     <div className="lowerContentBox">
 
-                        <div className="projectIntroBox"> 
+                        <div className="projectIntroBox">
                             <h2>Projects</h2>
                             <p>These are the personal projects that I've been working on lately</p>
                         </div>
@@ -93,7 +93,7 @@ class App extends React.Component {
                     </div>
                     <div className="creditsBox">
                         <p>
-                            This site was made with React and hosted on Firebase. 
+                            This site was made with React and hosted on Firebase.
                             You can find the source code on <a href="https://www.github.com/erikryverling/website">github.com/erikryverling/website</a>
                         </p>
                     </div>
@@ -110,22 +110,6 @@ function Social({name, link, path, viewBox=24}) {
             <desc>{name} logo</desc>
             <path d={path}/>
             </svg>
-        </a>
-    )
-}
-
-function Article({link, imageName, title, description, readTime, date, isExtended}) {
-    return(
-        <a class={`${isExtended ? 'extended' : 'standard'}`} href={link}>
-            <img src={`./${imageName}.png`} alt={imageName}/>
-            <h4>{title}</h4>
-            <p class="articleDescription">
-                {description}
-            </p>
-            <div class="articleDataRow">
-                <p>{`${readTime} min read`}</p>
-                <p>{date}</p>
-            </div>
         </a>
     )
 }
