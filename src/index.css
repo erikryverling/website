@@ -3,25 +3,13 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300');
 @import url('https://fonts.googleapis.com/css?family=Material+Icons');
 
+@import "theme.light.css" (prefers-color-scheme: light);
+@import "theme.dark.css" (prefers-color-scheme: dark);
+@import "tokens.css";
 @import "mobile.css";
 @import "desktop.css";
 
 :root {
-    /* Colors */
-
-    --color-common-light: #E6E6E6;
-    --color-common-dark: #333333;
-
-    --color-primary: #4F99AD;
-    --color-primary-variant: #2E5A66;
-
-    --color-secondary: #BD6F91;
-
-    --color-background: #FFFFFF;
-
-    --color-card-background-default: #FFFFFF;
-    --color-card-background-selected: #F2F2F2;
-
 
     /* Spaces */
 
@@ -46,13 +34,13 @@
 
 html, body {
     margin: 0;
-    background: linear-gradient(var(--color-primary-variant), var(--color-primary));
+    background: linear-gradient(var(--md-sys-color-primary), var(--md-sys-color-secondary));
 }
 
 p {
     margin: 0;
     font-family: var(--font-body);
-    color: var(--color-common-dark);
+    color: var(--md-sys-color-on-background);
     line-height: 1.5em;
 }
 
@@ -60,7 +48,7 @@ p {
 h1, h2, h3, h4 {
     margin: 0;
     width: fit-content;
-    color: var(--color-common-dark);
+    color: var(--md-sys-color-on-background);
 }
 
 h1 {
@@ -79,8 +67,8 @@ h3 {
 }
 
 h4 {
-     font-family: var(--font-body);
-     color: var(--color-common-dark);
+    font-family: var(--font-body);
+    color: var(--md-sys-color-on-background);
 }
 
 .rootBox {
@@ -106,20 +94,20 @@ h4 {
 }
 
 .socialLogo path {
-    fill: var(--color-common-light);
+    fill: var(--md-sys-color-on-primary);
 }
 
 .socialBox a:hover > .socialLogo path {
-    fill: var(--color-secondary);
+    fill: var(--md-sys-color-tertiary-container);
 }
 
 .titleBox h1 {
-    color: var(--color-common-light);
+    color: var(--md-sys-color-on-primary);
     margin-bottom: var(--space-s);
 }
 
 .titleBox p {
-    color: var(--color-common-light);
+    color: var(--md-sys-color-on-primary);
 }
 
 .titleBox h1 span {
@@ -133,7 +121,7 @@ h4 {
         text-shadow: inherit;
     }
 
-    79%{
+    79% {
         /* TODO cannot use var(--color-primary) for some reason */
         color: #4F99AD;
     }
@@ -185,7 +173,7 @@ h4 {
     white-space: nowrap;
     direction: ltr;
     text-align: center;
-    color: var(--color-common-light);
+    color: var(--md-sys-color-on-primary);
 
     /* Support for all WebKit browsers. */
     -webkit-font-smoothing: antialiased;
@@ -216,13 +204,13 @@ h4 {
 .lowerSectionTop {
     transform: skew(0deg, 3deg);
     position: relative;
-    background-color: var(--color-background);
+    background-color: var(--md-sys-color-background);
 }
 
 .lowerSectionMain {
     flex: 1;
     z-index: 1;
-    background-color: var(--color-background);
+    background-color: var(--md-sys-color-background);
 }
 
 .lowerContentBox {
@@ -249,13 +237,13 @@ h4 {
     flex: 1;
     border-radius: var(--space-xs);
     box-shadow: rgba(60, 64, 67, 0.3) 0 1px 2px 0, rgba(60, 64, 67, 0.15) 0 2px 6px 2px;
-    background-color: var(--color-card-background-default);
+    background-color: var(--md-sys-color-surface-container-low);
     text-decoration: none;
     padding: var(--space-m);
 }
 
 .projectsBox a:hover {
-    background-color: var(--color-card-background-selected);
+    background-color: var(--md-sys-color-surface-container);
 }
 
 .projectsBox img {
@@ -277,9 +265,9 @@ h4 {
 }
 
 .creditsBox a:link, .creditsBox a:visited {
-    color: var(--color-common-dark);
+    color: var(--md-sys-color-on-background);
 }
 
 .creditsBox a:hover {
-    color: var(--color-secondary);
+    color: var(--md-sys-color-secondary);
 }
