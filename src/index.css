@@ -34,7 +34,7 @@
 
 html, body {
     margin: 0;
-    background: linear-gradient(var(--md-sys-color-primary), var(--md-sys-color-secondary));
+    background: linear-gradient(var(--md-sys-color-primary), var(--md-sys-color-primary-gradient));
 }
 
 p {
