@@ -1,2 +1,2 @@
 #!/bin/sh
-yarn upgrade --latest
+yarn upgrade --latest --ignore-engines
