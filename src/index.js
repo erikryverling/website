@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import ReactGA from 'react-ga'
+import Snowfall from 'react-snowfall'
 
 import './index.css'
 
@@ -15,6 +16,10 @@ class App extends React.Component {
     render() {
         return(
             <div className="rootBox">
+                <Snowfall
+                    snowflakeCount={10}
+                />
+
                 <div className="upperContentBox">
                     <div className="mainBox">
 

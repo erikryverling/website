@@ -13,7 +13,8 @@
     "react-gtm-module": "^2.0.11",
     "react-highlight": "briancappello/react-highlight#react-v16-compiled",
     "react-images": "^1.2.0-beta.7",
-    "react-scripts": "5.0.1"
+    "react-scripts": "5.0.1",
+    "react-snowfall": "^2.2.0"
   },
   "scripts": {
     "start": "react-scripts start",
