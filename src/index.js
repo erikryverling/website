@@ -1,7 +1,7 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import ReactGA from 'react-ga'
 import Snowfall from 'react-snowfall'
+import {createRoot} from 'react-dom/client';
 
 import './index.css'
 
@@ -14,7 +14,7 @@ class App extends React.Component {
     }
 
     render() {
-        return(
+        return (
             <div className="rootBox">
                 <Snowfall
                     snowflakeCount={10}
@@ -99,7 +99,8 @@ class App extends React.Component {
                     <div className="creditsBox">
                         <p>
                             This site was made with React and hosted on Firebase.
-                            You can find the source code on <a href="https://www.github.com/erikryverling/website">github.com/erikryverling/website</a>
+                            You can find the source code on <a
+                            href="https://www.github.com/erikryverling/website">github.com/erikryverling/website</a>
                         </p>
                     </div>
                 </div>
@@ -108,19 +109,19 @@ class App extends React.Component {
     }
 }
 
-function Social({name, link, path, viewBox=24}) {
-    return(
+function Social({name, link, path, viewBox = 24}) {
+    return (
         <a href={link}>
             <svg className="socialLogo" xmlns="http://www.w3.org/2000/svg" viewBox={`0 0 ${viewBox} ${viewBox}`}>
-            <desc>{name} logo</desc>
-            <path d={path}/>
+                <desc>{name} logo</desc>
+                <path d={path}/>
             </svg>
         </a>
     )
 }
 
 function Project({name, link, description}) {
-    return(
+    return (
         <a href={link}>
             <img src={`./${name.toLowerCase()}-logo.png`} alt={`${name} logo`}/>
             <h3>{name}</h3>
@@ -131,4 +132,5 @@ function Project({name, link, description}) {
     )
 }
 
-ReactDOM.render(<App/>, document.getElementById('root'));
+const root = createRoot(document.getElementById('root'));
+root.render(<App/>);
