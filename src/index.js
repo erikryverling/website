@@ -24,7 +24,7 @@ class App extends React.Component {
                         <div className="titleBox">
                             <h1>I'm Erik<br/> <span>R.</span> Yverling</h1>
                             <p>
-                                A senior freelance developer with an overall passion for building mobile apps.
+                                A senior developer with an overall passion for building mobile apps.
                                 I also have leadership and management experience.<br/>
                             </p>
                         </div>
