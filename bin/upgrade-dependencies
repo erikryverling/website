@@ -1,2 +1,6 @@
-#!/bin/sh
+#!/usr/bin/env fish
 yarn upgrade --latest --ignore-engines
+yarn build
+firebase deploy
+git com "Bump dependencies"
+git pu
