@@ -1,6 +1,15 @@
-#!/usr/bin/env fish
 yarn upgrade --latest --ignore-engines
 yarn build
+
+echo "Logging out work"
+firebase logout
+echo "Log in Private"
+firebase login
 firebase deploy
+echo "Logging out private"
+firebase logout
+echo "Log in work"
+firebase login
+
 git com "Bump dependencies"
 git pu
